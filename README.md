@@ -39,4 +39,4 @@ That's it, your Slack clone should be running fine now!
 
 If you want to deploy this app using Vercel, fork this repository on GitHub and click on the button below. After being redirect to Vercel, fill your GitHub repository information and also the required environmental variables.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?env=REACT_APP_PARSE_APPLICATION_ID,REACT_APP_PARSE_LIVE_QUERY_URL,REACT_APP_PARSE_JAVASCRIPT_KEY)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftemplates-back4app%2Freact-ts-slack-clone&env=REACT_APP_PARSE_APPLICATION_ID,REACT_APP_PARSE_LIVE_QUERY_URL,REACT_APP_PARSE_JAVASCRIPT_KEY&envDescription=Enter%20your%20Application%20ID%2C%20Javascript%20Key%20and%20Real%20Time%20URL&envLink=https%3A%2F%2Fparse-dashboard.back4app.com%2Fapps&project-name=slack-clone-typescript-template&repository-name=slack-clone-typescript-template)
