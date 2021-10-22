@@ -119,7 +119,7 @@ export const Home: FC<{}> = (): ReactElement => {
           <p className="organization__title">Back4App</p>
         </div>
         <button className="button-inline" onClick={doLogout}>
-          <svg className="button-inline__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 4 15 9 20"></polyline><path d="M20 4v7a4 4 0 0 1-4 4H4"></path></svg>
+          <svg className="button-inline__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 10 4 15 9 20"></polyline><path d="M20 4v7a4 4 0 0 1-4 4H4"></path></svg>
           <span className="button-inline__label">Log out</span>
         </button>
       </div>

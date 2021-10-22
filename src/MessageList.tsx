@@ -52,6 +52,15 @@ export const MessageList: FC<MessageListProps> = (props: MessageListProps): Reac
     }
   };
 
+  // Get username of message sender
+  const getAuthorUsername = (message: Parse.Object): string => {
+    try {
+      return `${message.get("user").getUsername()}`;
+    } catch (_error: any) {
+      return "Some user";
+    }
+  }
+
   return (
     <>
       {/* Channel header */}
@@ -67,7 +76,7 @@ export const MessageList: FC<MessageListProps> = (props: MessageListProps): Reac
                 className="message-box"
                 key={result.id}
               >
-                <p className="message__author">{`${result.get("user") && result.get("user").getUsername()}`}</p>
+                <p className="message__author">{getAuthorUsername(result)}</p>
                 <p className="message__text">{`${result.get("text")}`}</p>
               </li>
             )) : (
@@ -79,6 +88,7 @@ export const MessageList: FC<MessageListProps> = (props: MessageListProps): Reac
       <div className="messages-compose">
         <div className="new-message">
           <textarea
+            value={messageInput}
             className="new-message__input"
             placeholder={"Your message..."}
             onChange={(event: any) => setMessageInput(event.target.value)}>{messageInput}
